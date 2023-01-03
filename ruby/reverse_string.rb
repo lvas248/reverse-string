@@ -1,6 +1,17 @@
+require 'pry'
+
 def reverse_string(str)
-  # type your code in here
+
+  reversed_str = ''
+
+  str.chars.each do |c|
+    reversed_str = reversed_str.prepend(c)
+  end
+
+  reversed_str
 end
+
+binding.pry
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ih'"
@@ -15,4 +26,11 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+
+# split string
+#create new empty string
+#iterate over the string, prepend each element into empty string
+#return reversed string
+
 # And a written explanation of your solution
+
